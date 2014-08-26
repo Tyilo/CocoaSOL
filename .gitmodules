@@ -1,0 +1,3 @@
+[submodule "cocoa-amf"]
+	path = cocoa-amf
+	url = https://github.com/clinseman/cocoa-amf
