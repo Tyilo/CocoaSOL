@@ -23,6 +23,8 @@
 	
 	NSLog(@"data1: %@", data);
 	
+	NSMutableArray *m_stringTable = [NSMutableArray new];
+	
 	for(NSString *key in dict) {
 		id obj = dict[key];
 		
@@ -32,8 +34,15 @@
 		
 		[data appendBytes:[key UTF8String] length:[key length]];
 		
+		[m_stringTable addObject:key];
+		
 		AMFArchiver *archiver = [[AMFArchiver alloc] initForWritingWithMutableData:[NSMutableData new] encoding:kAMF3Encoding];
+		
+		_object_setInstanceVariable_id(archiver, "m_stringTable", m_stringTable);
+		
 		[archiver encodeObject:obj];
+		
+		_object_getInstanceVariable_id(archiver, "m_stringTable", &m_stringTable);
 		
 		NSData *objData = [archiver data];
 		
@@ -61,7 +70,7 @@
 	
 	NSLog(@"data2: %@", data);
 	
-	uint32_t body_length = CFSwapInt32HostToBig([data length] - offsetof(sol_header_t, magic2));
+	uint32_t body_length = CFSwapInt32HostToBig((uint32_t)[data length] - offsetof(sol_header_t, magic2));
 	[data replaceBytesInRange:NSMakeRange(offsetof(sol_header_t, body_length), sizeof(body_length)) withBytes:&body_length];
 	
 	NSLog(@"data3: %@", data);

@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55F4A56E19AD1B020051750D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F4A53419AD1AB20051750D /* Foundation.framework */; };
+		55F4A57319AD1B020051750D /* CocoaSOL.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55F4A57219AD1B020051750D /* CocoaSOL.h */; };
+		55F4A57B19AD1B020051750D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A2593619AD14530054F9A8 /* XCTest.framework */; };
+		55F4A57C19AD1B020051750D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F4A53419AD1AB20051750D /* Foundation.framework */; };
+		55F4A57D19AD1B020051750D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F4A54419AD1AB20051750D /* UIKit.framework */; };
+		55F4A58019AD1B020051750D /* libCocoaSOL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F4A56D19AD1B020051750D /* libCocoaSOL.a */; };
+		55F4A58619AD1B020051750D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55F4A58419AD1B020051750D /* InfoPlist.strings */; };
+		55F4A58819AD1B020051750D /* CocoaSOLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F4A58719AD1B020051750D /* CocoaSOLTests.m */; };
+		55F4A58F19AD1B180051750D /* libCocoaAMF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5588AD8C19AD18000045E419 /* libCocoaAMF.a */; };
+		55F4A59819AD1BB10051750D /* SOL.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F4A59319AD1BB10051750D /* SOL.m */; };
+		55F4A59919AD1BB10051750D /* SOLArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F4A59519AD1BB10051750D /* SOLArchiver.m */; };
+		55F4A59A19AD1BB10051750D /* SOLUnarchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F4A59719AD1BB10051750D /* SOLUnarchiver.m */; };
+		55FD4C3019AD1D8900920057 /* myApp3.sol in Resources */ = {isa = PBXBuildFile; fileRef = 55FD4C2F19AD1D8900920057 /* myApp3.sol */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5588AD8919AD18000045E419 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5588AD8419AD17FF0045E419 /* CocoaAMF-iPhone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = "CocoaAMF-iPhone";
+		};
+		5588AD8B19AD18000045E419 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5588AD8419AD17FF0045E419 /* CocoaAMF-iPhone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2CEB28391203818500887DED;
+			remoteInfo = "CocoaAMF (Device 4.0)";
+		};
+		55F4A57E19AD1B020051750D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55A2591A19AD14530054F9A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55F4A56C19AD1B020051750D;
+			remoteInfo = CocoaSOL;
+		};
+		55F4A59019AD1B250051750D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5588AD8419AD17FF0045E419 /* CocoaAMF-iPhone.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CEB28381203818500887DED;
+			remoteInfo = "CocoaAMF (Device 4.0)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55F4A56B19AD1B020051750D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				55F4A57319AD1B020051750D /* CocoaSOL.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5588AD8419AD17FF0045E419 /* CocoaAMF-iPhone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CocoaAMF-iPhone.xcodeproj"; path = "cocoa-amf/CocoaAMF-iPhone.xcodeproj"; sourceTree = "<group>"; };
+		55A2592519AD14530054F9A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		55A2592819AD14530054F9A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		55A2592919AD14530054F9A8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		55A2592A19AD14530054F9A8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		55A2593619AD14530054F9A8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		55F4A53419AD1AB20051750D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		55F4A54419AD1AB20051750D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		55F4A56D19AD1B020051750D /* libCocoaSOL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaSOL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F4A57119AD1B020051750D /* CocoaSOL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaSOL-Prefix.pch"; sourceTree = "<group>"; };
+		55F4A57219AD1B020051750D /* CocoaSOL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaSOL.h; sourceTree = "<group>"; };
+		55F4A57A19AD1B020051750D /* CocoaSOLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaSOLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F4A58319AD1B020051750D /* CocoaSOLTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaSOLTests-Info.plist"; sourceTree = "<group>"; };
+		55F4A58519AD1B020051750D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		55F4A58719AD1B020051750D /* CocoaSOLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaSOLTests.m; sourceTree = "<group>"; };
+		55F4A59219AD1BB10051750D /* SOL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOL.h; sourceTree = "<group>"; };
+		55F4A59319AD1BB10051750D /* SOL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOL.m; sourceTree = "<group>"; };
+		55F4A59419AD1BB10051750D /* SOLArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLArchiver.h; sourceTree = "<group>"; };
+		55F4A59519AD1BB10051750D /* SOLArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLArchiver.m; sourceTree = "<group>"; };
+		55F4A59619AD1BB10051750D /* SOLUnarchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUnarchiver.h; sourceTree = "<group>"; };
+		55F4A59719AD1BB10051750D /* SOLUnarchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLUnarchiver.m; sourceTree = "<group>"; };
+		55FD4C2F19AD1D8900920057 /* myApp3.sol */ = {isa = PBXFileReference; lastKnownFileType = file; path = myApp3.sol; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55F4A56A19AD1B020051750D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F4A56E19AD1B020051750D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55F4A57719AD1B020051750D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F4A58F19AD1B180051750D /* libCocoaAMF.a in Frameworks */,
+				55F4A58019AD1B020051750D /* libCocoaSOL.a in Frameworks */,
+				55F4A57B19AD1B020051750D /* XCTest.framework in Frameworks */,
+				55F4A57D19AD1B020051750D /* UIKit.framework in Frameworks */,
+				55F4A57C19AD1B020051750D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5588AD8519AD17FF0045E419 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5588AD8A19AD18000045E419 /* CocoaAMFiPhone.app */,
+				5588AD8C19AD18000045E419 /* libCocoaAMF.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55A2591919AD14530054F9A8 = {
+			isa = PBXGroup;
+			children = (
+				5588AD8419AD17FF0045E419 /* CocoaAMF-iPhone.xcodeproj */,
+				55F4A56F19AD1B020051750D /* CocoaSOL */,
+				55F4A58119AD1B020051750D /* CocoaSOLTests */,
+				55A2592419AD14530054F9A8 /* Frameworks */,
+				55A2592319AD14530054F9A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55A2592319AD14530054F9A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55F4A56D19AD1B020051750D /* libCocoaSOL.a */,
+				55F4A57A19AD1B020051750D /* CocoaSOLTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55A2592419AD14530054F9A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55A2592519AD14530054F9A8 /* Cocoa.framework */,
+				55A2593619AD14530054F9A8 /* XCTest.framework */,
+				55F4A53419AD1AB20051750D /* Foundation.framework */,
+				55F4A54419AD1AB20051750D /* UIKit.framework */,
+				55A2592719AD14530054F9A8 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55A2592719AD14530054F9A8 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55A2592819AD14530054F9A8 /* Foundation.framework */,
+				55A2592919AD14530054F9A8 /* CoreData.framework */,
+				55A2592A19AD14530054F9A8 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		55F4A56F19AD1B020051750D /* CocoaSOL */ = {
+			isa = PBXGroup;
+			children = (
+				55F4A57219AD1B020051750D /* CocoaSOL.h */,
+				55F4A59219AD1BB10051750D /* SOL.h */,
+				55F4A59319AD1BB10051750D /* SOL.m */,
+				55F4A59419AD1BB10051750D /* SOLArchiver.h */,
+				55F4A59519AD1BB10051750D /* SOLArchiver.m */,
+				55F4A59619AD1BB10051750D /* SOLUnarchiver.h */,
+				55F4A59719AD1BB10051750D /* SOLUnarchiver.m */,
+				55F4A57019AD1B020051750D /* Supporting Files */,
+			);
+			path = CocoaSOL;
+			sourceTree = "<group>";
+		};
+		55F4A57019AD1B020051750D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55F4A57119AD1B020051750D /* CocoaSOL-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55F4A58119AD1B020051750D /* CocoaSOLTests */ = {
+			isa = PBXGroup;
+			children = (
+				55F4A58719AD1B020051750D /* CocoaSOLTests.m */,
+				55FD4C2E19AD1D8900920057 /* Resources */,
+				55F4A58219AD1B020051750D /* Supporting Files */,
+			);
+			path = CocoaSOLTests;
+			sourceTree = "<group>";
+		};
+		55F4A58219AD1B020051750D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55F4A58319AD1B020051750D /* CocoaSOLTests-Info.plist */,
+				55F4A58419AD1B020051750D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55FD4C2E19AD1D8900920057 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55FD4C2F19AD1D8900920057 /* myApp3.sol */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55F4A56C19AD1B020051750D /* CocoaSOL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55F4A58919AD1B020051750D /* Build configuration list for PBXNativeTarget "CocoaSOL" */;
+			buildPhases = (
+				55F4A56919AD1B020051750D /* Sources */,
+				55F4A56A19AD1B020051750D /* Frameworks */,
+				55F4A56B19AD1B020051750D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaSOL;
+			productName = CocoaSOL;
+			productReference = 55F4A56D19AD1B020051750D /* libCocoaSOL.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		55F4A57919AD1B020051750D /* CocoaSOLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55F4A58C19AD1B020051750D /* Build configuration list for PBXNativeTarget "CocoaSOLTests" */;
+			buildPhases = (
+				55F4A57619AD1B020051750D /* Sources */,
+				55F4A57719AD1B020051750D /* Frameworks */,
+				55F4A57819AD1B020051750D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55F4A59119AD1B250051750D /* PBXTargetDependency */,
+				55F4A57F19AD1B020051750D /* PBXTargetDependency */,
+			);
+			name = CocoaSOLTests;
+			productName = CocoaSOLTests;
+			productReference = 55F4A57A19AD1B020051750D /* CocoaSOLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55A2591A19AD14530054F9A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Tyilo;
+			};
+			buildConfigurationList = 55A2591D19AD14530054F9A8 /* Build configuration list for PBXProject "CocoaSOL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 55A2591919AD14530054F9A8;
+			productRefGroup = 55A2592319AD14530054F9A8 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5588AD8519AD17FF0045E419 /* Products */;
+					ProjectRef = 5588AD8419AD17FF0045E419 /* CocoaAMF-iPhone.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				55F4A56C19AD1B020051750D /* CocoaSOL */,
+				55F4A57919AD1B020051750D /* CocoaSOLTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5588AD8A19AD18000045E419 /* CocoaAMFiPhone.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CocoaAMFiPhone.app;
+			remoteRef = 5588AD8919AD18000045E419 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5588AD8C19AD18000045E419 /* libCocoaAMF.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaAMF.a;
+			remoteRef = 5588AD8B19AD18000045E419 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55F4A57819AD1B020051750D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55FD4C3019AD1D8900920057 /* myApp3.sol in Resources */,
+				55F4A58619AD1B020051750D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55F4A56919AD1B020051750D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F4A59919AD1BB10051750D /* SOLArchiver.m in Sources */,
+				55F4A59819AD1BB10051750D /* SOL.m in Sources */,
+				55F4A59A19AD1BB10051750D /* SOLUnarchiver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55F4A57619AD1B020051750D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F4A58819AD1B020051750D /* CocoaSOLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55F4A57F19AD1B020051750D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55F4A56C19AD1B020051750D /* CocoaSOL */;
+			targetProxy = 55F4A57E19AD1B020051750D /* PBXContainerItemProxy */;
+		};
+		55F4A59119AD1B250051750D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CocoaAMF (Device 4.0)";
+			targetProxy = 55F4A59019AD1B250051750D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		55F4A58419AD1B020051750D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55F4A58519AD1B020051750D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55A2594419AD14530054F9A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		55A2594519AD14530054F9A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		55F4A58A19AD1B020051750D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CocoaSOL.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaSOL/CocoaSOL-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"cocoa-amf/CocoaAMF",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		55F4A58B19AD1B020051750D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CocoaSOL.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaSOL/CocoaSOL-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"cocoa-amf/CocoaAMF",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55F4A58D19AD1B020051750D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaSOL/CocoaSOL-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CocoaSOLTests/CocoaSOLTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		55F4A58E19AD1B020051750D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaSOL/CocoaSOL-Prefix.pch";
+				INFOPLIST_FILE = "CocoaSOLTests/CocoaSOLTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55A2591D19AD14530054F9A8 /* Build configuration list for PBXProject "CocoaSOL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A2594419AD14530054F9A8 /* Debug */,
+				55A2594519AD14530054F9A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55F4A58919AD1B020051750D /* Build configuration list for PBXNativeTarget "CocoaSOL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55F4A58A19AD1B020051750D /* Debug */,
+				55F4A58B19AD1B020051750D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55F4A58C19AD1B020051750D /* Build configuration list for PBXNativeTarget "CocoaSOLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55F4A58D19AD1B020051750D /* Debug */,
+				55F4A58E19AD1B020051750D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55A2591A19AD14530054F9A8 /* Project object */;
+}

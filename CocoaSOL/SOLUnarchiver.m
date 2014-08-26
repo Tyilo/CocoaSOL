@@ -79,9 +79,6 @@
 	NSMutableDictionary *dict = [NSMutableDictionary new];
 	
 	NSMutableArray *m_stringTable = [NSMutableArray new];
-	if(amf_version == kAMF3Encoding) {
-		[m_stringTable addObject:_solName];
-	}
 	
 	while(instance->dataRead < [data length]) {
 		uint8_t name_length;
@@ -104,6 +101,8 @@
 		
 		NSString *key = [NSString stringWithUTF8String:name];
 		free(name);
+		
+		[m_stringTable addObject:key];
 		
 		NSData *remainingData = [data subdataWithRange:NSMakeRange(instance->dataRead, [data length] - instance->dataRead)];
 		
